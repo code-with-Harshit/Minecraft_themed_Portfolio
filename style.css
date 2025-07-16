@@ -1,0 +1,165 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+  
+      scroll-behavior: smooth;
+      height: 100%;
+      font-family: 'Press Start 2P', monospace;
+  transition: background-image 1s ease-in-out, color 0.5s ease;
+  background-image: url('https://www.pixelstalk.net/wp-content/uploads/images6/Minecraft-4K-Backgrounds-for-Desktop.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: var(--primary-day);
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  image-rendering: pixelated;
+}
+
+:root {
+  --primary-day: #111;
+  --primary-night: #c1f0ff;
+}
+
+body.night-mode {
+  background-image: url('https://w0.peakpx.com/wallpaper/957/590/HD-wallpaper-minecraft-village-moon-night-in-game-screenshot-games.jpg'); /* Replace with night bg */
+  color: var(--primary-night);
+}
+
+
+section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: transparent; /* Remove solid background */
+}
+
+.intro-line {
+  font-size: 1.6rem;
+  margin-bottom: 0.1rem;
+  text-align: center;
+  color: var(--primary);
+}
+
+.curved-text {
+  width: 100%;
+  max-width: 1000px;
+  height: 300px;
+  margin-top: 0.2rem;
+}
+.curved-name {
+  font-family: 'Minecraft', 'Press Start 2P', monospace; /* Or 'Minecraft' if you linked it */
+  
+  font-size: 6rem;
+  letter-spacing: 8px;
+  filter: drop-shadow(2px 2px 0 #000)
+          drop-shadow(0 0 10px #ffffff);
+}
+.sub-text {
+  font-size: 1.6rem;
+  margin-bottom: 0.4rem;
+  text-align: center;
+  color: var(--primary);
+}
+
+
+#theme-toggle {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  background-color: #A0A0A0;
+  color: #000;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  padding: 8px 14px;
+  border: 3px solid #5E5E5E;
+  box-shadow: 3px 3px #707070;
+  cursor: pointer;
+  image-rendering: pixelated;
+  transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background-color: #C6C6C6;
+}
+
+nav {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  display: flex;
+  gap: 0.5rem;
+  background-color: #C6C6C6;
+  padding: 1rem;
+  border: 4px solid #5E5E5E;
+  box-shadow: 4px 4px #707070;
+  
+  image-rendering: pixelated;
+}
+
+.pixel-link {
+  font-family: 'Press Start 2P', monospace;
+  font-size: 10px;
+  background-color: #A0A0A0;
+  color: #000;
+  padding: 6px 12px;
+  border: 2px solid #5E5E5E;
+  box-shadow: 2px 2px #707070;
+  text-decoration: none;
+  image-rendering: pixelated;
+  transition: background 0.2s ease, transform 0.1s;
+}
+
+.pixel-link:hover {
+  background-color: #C6C6C6;
+  transform: translateY(1px);
+}
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      text-shadow: 1px 1px #000;
+    }
+
+    p {
+      font-size: 0.7rem;
+      text-align: center;
+      max-width: 600px;
+      opacity: 0.9;
+      line-height: 1.6;
+    }
+h1, p {
+  text-shadow:
+    0 0 4px #ccc,
+    0 0 8px #e0e0ff,
+    0 0 12px #ffffff;
+}
+
+    a {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 1s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
