@@ -164,6 +164,7 @@ h1, p {
       transform: translateY(0);
     }
 
+
 .projects-container {
   display: flex;
   justify-content: center;
@@ -263,4 +264,3 @@ h1, p {
   cursor: pointer;
   font-family: monospace;
 }
-
