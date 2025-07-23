@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mine-Olio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">+
+<link href="https://fonts.cdnfonts.com/css/minecraft-4" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+  <button id="theme-toggle">🌞 DAY</button>
+  <nav>
+  <a class="pixel-link" href="#hero">HOME</a>
+  <a class="pixel-link" href="#work">WORK</a>
+  <a class="pixel-link" href="#about">ABOUT</a>
+  <a class="pixel-link" href="#contact">CONTACT</a>
+</nav>
+
+  <section id="hero">
+  
+  <p class="fade-in sub-text">WELCOME TO MY PORTFOLIO</p>
+  <p class="fade-in intro-line">HI, I'M</p>
+
+  <svg viewBox="0 0 1000 400" class="fade-in curved-text">
+    <defs>
+      <!-- Wide arc instead of semi-circle -->
+      <path id="arc" d="M 100 300 Q 500 50 900 300" />
+    </defs>
+    <text width="1000" text-anchor="middle">
+      <textPath href="#arc" startOffset="50%" class=" curved-name">HARSHIT SOOD</textPath>
+    </text>
+  </svg>
+
+</section>
+
+  
+  
+  <section id="work">
+    <h1 class="fade-in">MY WORK</h1>
+    <p class="fade-in">EXPLORING INTERFACES, BUILDING FUNKY PIXEL VIBES, AND WEAVING STORY-DRIVEN CODE.</p>
+  <div class="projects-container">
+    <div class="project-block" onclick="openModal('project1')">
+      <span>Project 1</span>
+    </div>
+    <div class="project-block" onclick="openModal('project2')">
+      <span>Project 2</span>
+    </div>
+    <div class="project-block" onclick="openModal('project3')">
+      <span>Project 3</span>
+    </div>
+  </div>
+
+  <div id="project1" class="project-modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('project1')">&times;</span>
+      <h3 class="project-title">Readers' Haven</h3>
+      <div class="project-image">
+      <img src="Minecraft_themed_Portfolio/Desktop/FEE II/portfolio
+/assets/Project1_img.png" alt="Project 1 Screenshot" />
+    </div>
+      <p><strong>Tech Used:</strong> HTML, CSS, JS</p>
+      <p><strong>Description:</strong> An online bookstore with an authentic and working search engine API for avid book readers and nerds :p</p>
+    </div>
+  </div>
+
+  <div id="project2" class="project-modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('project2')">&times;</span>
+      <h3 class="project-title">Mine-Olio</h3>
+      <div class="project-image">
+      <img src="Minecraft_themed_Portfolio/Desktop/FEE II/portfolio
+/assets/Project2_img.png" alt="Project 2 Screenshot" />
+    </div>
+      <p><strong>Tech Used:</strong> HTML, CSS, JS</p>
+      <p><strong>Description:</strong> A portfolio frontend that display the user experience in a fun visual website.</p>
+    </div>
+  </div>
+
+  <div id="project3" class="project-modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('project3')">&times;</span>
+      <h3 class="project-title">Automatic Fire Detection System</h3>
+      <div class="project-image">
+      <img src="Minecraft_themed_Portfolio/Desktop/FEE II/portfolio
+/assets/Project3_img.jpg" alt="Project 3 Screenshot" />
+    </div>
+      <p><strong>Tech Used:</strong> HTML, CSS, JS</p>
+      <p><strong>Description:</strong> A frontend website that displays signal from an external ESP32 Arduino upon detecting fire. This was a group project for our DECA course.</p>
+    </div>
+  </div>
+  </section>
+
+  <section id="about">
+    <h1 class="fade-in">ABOUT ME</h1>
+    <p class="fade-in">I MAKE PIXEL-PERFECT PROJECTS THAT FEEL LIKE RETRO MAGIC. DESIGNING WITH LOVE AND A BIT OF 90s ENERGY.</p>
+  </section>
+
+  <section id="contact">
+    <h1 class="fade-in">LET'S CONNECT</h1>
+    <p class="fade-in">SAY HI VIA <a href="mailto:harshit0335.becse24@chitkara.edu.in">EMAIL</a> OR FIND ME ON LINKEDIN — I'LL BRING THE PIXELS.</p>
+  </section>
+
+</body>
+</html>
