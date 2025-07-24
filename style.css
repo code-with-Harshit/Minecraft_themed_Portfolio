@@ -264,3 +264,44 @@ h1, p {
   cursor: pointer;
   font-family: monospace;
 }
+.about-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.about-container {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  padding: 30px;
+  background: url('https://i.pinimg.com/736x/61/c8/57/61c85711c4cf90c6ac3bd605b192c94f.jpg');
+  border: 3px solid #ccc;
+  /* border-image: url('assets/minecraft-border.png') 30 round; optional blocky border */
+  box-shadow: 0 0 15px #000;
+  z-index: 2;
+}
+
+
+.about-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000aa;
+  z-index: 2;
+}
+
+.about-text {
+  position: relative;
+  z-index: 3;
+  color: #e0e0e0;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+}
